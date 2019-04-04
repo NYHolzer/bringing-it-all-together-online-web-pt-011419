@@ -44,6 +44,10 @@ class Dog
     new_dog
   end 
   
+  def self.new_from_db 
+    
+  end 
+  
   def find_by_id (x)
     sql = <<-SQL
       SELECT * 

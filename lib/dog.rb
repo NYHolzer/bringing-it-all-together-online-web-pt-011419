@@ -10,6 +10,7 @@ class Dog
   end 
   
   def self.create_table 
+    
     self.drop_table
     
     sql = <<-SQL 

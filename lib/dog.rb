@@ -10,8 +10,8 @@ class Dog
   end 
   
   def self.create_table 
+    DB[:conn].execute("DROP TABLE IF EXISTS dogs")
     sql = <<-SQL 
-    DROP TABLE IF EXISTS dogs;
     CREATE TABLE dogs (
       id INTEGER PRIMARY KEY
       name TEXT 

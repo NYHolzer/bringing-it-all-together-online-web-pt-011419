@@ -16,7 +16,7 @@ class Dog
       id INTEGER PRIMARY KEY,
       name TEXT,
       breed TEXT
-    )
+    );
     SQL
     
     array = DB[:conn].execute(sql)

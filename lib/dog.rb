@@ -20,7 +20,7 @@ class Dog
     SQL
     
     array = DB[:conn].execute(sql)
-    
+    binding.pry
   end 
 
 

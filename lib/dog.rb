@@ -51,7 +51,7 @@ class Dog
     self.new(id, name, grade)
   end 
   
-  def find_by_id (x)
+  def self.find_by_id (x)
     sql = <<-SQL
       SELECT * 
     SQL

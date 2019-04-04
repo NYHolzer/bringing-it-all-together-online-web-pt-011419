@@ -43,5 +43,9 @@ class Dog
     new_dog.save
     new_dog
   end 
+  
+  def find_by_id
+    
+  end 
 
 end 

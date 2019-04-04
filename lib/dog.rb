@@ -37,5 +37,9 @@ class Dog
     
     self
   end 
+  
+  def self.create (name:, breed:)
+    new_dog = self.
+  end 
 
 end 

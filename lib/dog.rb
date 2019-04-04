@@ -56,7 +56,7 @@ class Dog
       SELECT * FROM dogs WHERE id = ?
     SQL
     
-    array = DB[:conn].execute(sql, x)
+    DB[:conn].execute(sql, x)
   end 
 
 end 

@@ -19,7 +19,7 @@ class Dog
     )
     SQL
     
-    DB[:conn].execute(sql)
+    array = DB[:conn].execute(sql)
     
   end 
 

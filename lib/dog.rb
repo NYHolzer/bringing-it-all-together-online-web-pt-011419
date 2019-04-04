@@ -11,6 +11,7 @@ class Dog
   
   def self.create_table 
     DB[:conn].execute("DROP TABLE IF EXISTS dogs")
+    
     sql = <<-SQL 
     CREATE TABLE dogs (
       id INTEGER PRIMARY KEY,
@@ -19,7 +20,7 @@ class Dog
     )
     SQL
     
-    array = DB[:conn].execute(sql)
+    DB[:conn].execute(sql)
   end 
 
 

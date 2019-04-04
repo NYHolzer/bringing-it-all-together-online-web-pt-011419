@@ -57,7 +57,7 @@ class Dog
     SQL
     
     array = DB[:conn].execute(sql, x).map do |row|
-      self.new_from_db(row)
+      dog = self.new_from_db(row)
     end.first  
     binding.pry
   end 
